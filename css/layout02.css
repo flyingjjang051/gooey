@@ -20,6 +20,7 @@ a {
   background-size: 400%;
   background-position: 0 50%;
   height: 100vh;
+  font-family: "Titillium Web";
   animation: changeGradient 30s linear infinite alternate;
 }
 #mainVisual:before {
