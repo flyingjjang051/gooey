@@ -12,15 +12,69 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/greensock/gsap.min.js"></script>
-    <script src="js/greensock/CSSRulePlugin.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/greensock/gsap.min.js"></script>
+    <script src="../js/greensock/CSSRulePlugin.min.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/typed.min.js"></script>
+    <script src="../js/main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <h1 id="logo">
+        <a href=""> JJANG'S MEDIA LAB </a>
+      </h1>
+      <nav id="gnb">
+        <ul>
+          <li><a href="">INTRO</a></li>
+          <li><a href="">PROFILE</a></li>
+          <li><a href="">WORKS</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="mainVisual">
+        <!-- <div id="typed-strings">
+            <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+            <p>It <em>types</em> out sentences.</p>
+            <p>fjdsfkdhs <em>hfdhfjs</em> fhjdhskf</p>
+          </div>
+          <span id="typed"></span> -->
+
+        <div id="typing"></div>
+        <div id="blobs">
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+        </div>
+        <svg>
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+              <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="gooey" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+      </section>
+    </main>
+  </body>
 </html>
