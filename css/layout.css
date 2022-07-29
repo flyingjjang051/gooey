@@ -89,11 +89,33 @@ a {
   text-align: center;
   z-index: 3;
   text-transform: uppercase;
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: 100;
+  font-family: "Titillium Web";
 }
 #typing strong {
   font-weight: 700;
+}
+#typing .inner {
+  vertical-align: middle;
+}
+#typing .typed-cursor {
+  vertical-align: middle;
+  font-size: 2.25vw;
+}
+
+#circle {
+  color: #fff;
+  position: fixed;
+  bottom: 0px;
+  right: 150px;
+  text-transform: uppercase;
+  font-size: 16px;
+  word-spacing: 0.1em;
+  animation: rolling 20s linear infinite;
+}
+#circle span:nth-child(1) {
+  text-indent: 10px;
 }
 
 @keyframes changeGradient {
@@ -105,5 +127,13 @@ a {
   }
   100% {
     background-position: 0 50%;
+  }
+}
+@keyframes rolling {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
