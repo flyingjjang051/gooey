@@ -1,5 +1,5 @@
 const blob = $("#blobs .blob");
-//10~20
+
 function random(min, max) {
   return Math.random() * (max - min) + min;
 }
@@ -7,7 +7,7 @@ function moveRandom(_blob) {
   gsap.to(_blob, {
     scale: random(0.5, 1),
     x: random(-500, 500),
-    y: random(-80, 80),
+    y: random(-50, 50),
     duration: random(5, 10),
     ease: "power2",
     onComplete: function () {
